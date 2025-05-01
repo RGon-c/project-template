@@ -1,0 +1,25 @@
+{
+    "extends": ["@nuxt/eslint-config", "prettier"],
+    "rules": {
+      "vue/no-mutating-props": "off",
+      "vue/attributes-order": [
+        "error",
+        {
+          "order": [
+            "CONDITIONALS",
+            "LIST_RENDERING",
+            "RENDER_MODIFIERS",
+            "GLOBAL",
+            "UNIQUE",
+            "DEFINITION",
+            "TWO_WAY_BINDING",
+            "OTHER_DIRECTIVES",
+            "EVENTS",
+            "CONTENT"
+          ]
+        }
+      ],
+      "vue/order-in-components": ["error"]
+    }
+  }
+  
